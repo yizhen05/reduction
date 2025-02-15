@@ -1,0 +1,32 @@
+<script lang="ts">
+	import B from './A.svelte';
+	let num = 1;
+	let num2 = 2;
+</script>
+
+<div class="test">
+	<B {num} />
+
+	<div class="bg-amber-700">
+		num = {num}
+	</div>
+
+	<button on:click={() => (num += 1)} class=" mt-2 rounded-2xl bg-amber-300 p-4">
+		Increment
+	</button>
+
+	<input type="number" bind:value={num2} />
+	<div class="bg-amber-700">
+		num2 = {num2}
+	</div>
+</div>
+
+<style>
+	.test {
+		background-color: aqua;
+		height: 100%;
+	}
+	:root {
+		height: 100%;
+	}
+</style>

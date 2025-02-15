@@ -1,0 +1,7 @@
+<script lang="ts">
+	export let num;
+</script>
+
+{#if num === 1}
+	<div>1desu</div>
+{/if}
