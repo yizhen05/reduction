@@ -15,3 +15,4 @@ export default {
 		appDir: 'internal'
 	}
 };
+//わからん！！！
