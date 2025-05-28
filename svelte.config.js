@@ -7,14 +7,11 @@ export default {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined
+			fallback: null
 		}),
 		paths: {
-			base: dev ? '' : '/reduction' // 例: '/my-svelte-app'
+			base: dev ? '' : '/reduction' // 例: '/my-app'
 		},
-		appDir: 'internal',
-		prerender: {
-			default: true
-		}
+		appDir: 'internal'
 	}
 };
