@@ -7,7 +7,7 @@ export default {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null
+			fallback: 'index.html'
 		}),
 		paths: {
 			base: dev ? '' : '/reduction' // 例: '/my-app'
